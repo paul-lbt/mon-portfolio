@@ -3,97 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mon Portfolio - Jean Dupont</title>
     <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #e63946;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --card-bg: #f8f8f8;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 2rem 0;
         }
         h1 {
-            text-align: center;
-            color: #333;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
+            color: var(--secondary-color);
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
         .project {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
         .project:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
         }
-        .project h2 {
-            margin-top: 0;
-            color: #007BFF;
+        .project-header {
+            background-color: var(--secondary-color);
+            color: var(--bg-color);
+            padding: 1rem;
         }
-        .project p {
-            color: #555;
+        .project-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
         }
-        .project a {
+        .project-body {
+            padding: 1rem;
+        }
+        .project-body p {
+            margin: 0 0 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--bg-color);
             text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
-        .project a:hover {
-            text-decoration: underline;
+        .btn:hover {
+            background-color: #c62c3b;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Mes Projets</h1>
+    <header>
+        <h1>Jean Dupont</h1>
+        <p class="subtitle">Développeur Web Créatif</p>
+    </header>
+
     <div class="container">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <div class="project-header">
+                    <h2>Site E-commerce</h2>
+                </div>
+                <div class="project-body">
+                    <p>Création d'une plateforme de vente en ligne complète avec panier, paiement sécurisé et gestion des stocks.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
 
-        <!-- Projet 1 -->
-        <div class="project">
-            <h2>Projet 1 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
+            <div class="project">
+                <div class="project-header">
+                    <h2>Application Mobile</h2>
+                </div>
+                <div class="project-body">
+                    <p>Développement d'une app de suivi fitness pour iOS et Android avec React Native.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h2>Dashboard Analytique</h2>
+                </div>
+                <div class="project-body">
+                    <p>Création d'un tableau de bord interactif pour visualiser les données d'entreprise en temps réel.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h2>Blog Personnel</h2>
+                </div>
+                <div class="project-body">
+                    <p>Conception et développement d'un blog responsive avec système de gestion de contenu personnalisé.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h2>API RESTful</h2>
+                </div>
+                <div class="project-body">
+                    <p>Développement d'une API sécurisée pour une application de gestion de tâches avec Node.js et Express.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h2>Portfolio Photographe</h2>
+                </div>
+                <div class="project-body">
+                    <p>Création d'un site vitrine élégant pour mettre en valeur le travail d'un photographe professionnel.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
         </div>
-
-        <!-- Projet 2 -->
-        <div class="project">
-            <h2>Projet 2 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="project">
-            <h2>Projet 3 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
-        </div>
-
-        <!-- Projet 4 -->
-        <div class="project">
-            <h2>Projet 4 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
-        </div>
-
-        <!-- Projet 5 -->
-        <div class="project">
-            <h2>Projet 5 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
-        </div>
-
-        <!-- Projet 6 -->
-        <div class="project">
-            <h2>Projet 6 : Titre du Projet</h2>
-            <p>Description rapide du projet, ce que vous avez réalisé, et les outils que vous avez utilisés.</p>
-            <p><a href="lien-vers-le-pdf-ou-application" target="_blank">Voir le projet</a></p>
-        </div>
-
     </div>
+
+    <footer>
+        <p>&copy; 2024 Jean Dupont. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
