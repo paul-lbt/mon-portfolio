@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Jean Dupont</title>
+    <title>Mon Portfolio - Paul LE BRETON</title>
     <style>
         :root {
             --primary-color: #1a1a1a;
@@ -108,6 +108,28 @@
             color: white;
             transform: scale(1.05);
         }
+
+        /* Styles de la section CV */
+        .cv-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .cv-section h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -116,6 +138,13 @@
         <p class="subtitle">Étudiant en Master2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
     </header>
 
+    <!-- Section CV PDF -->
+    <div class="cv-section">
+        <h2>Mon CV</h2>
+        <iframe src="CV_Paul_LE_BRETON.pdf"></iframe> <!-- Remplace 'chemin_vers_ton_cv.pdf' par l'URL réelle -->
+    </div>
+
+    <!-- Section Projets académiques -->
     <div class="container">
         <h2>Mes Projets académiques</h2>
         <div class="projects-grid">
@@ -136,115 +165,7 @@
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <h2>Visualisation avec Python Bokeh</h2>
-                </div>
-                <div class="project-body">
-                    <p>Développement d'une application web interactive dédiée à l'exploration visuelle de données relatives aux parkings de la métropole rennaise.</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">Python</span>
-                        <span class="tech-pill">Bokeh</span>
-                        <span class="tech-pill">Pandas</span>
-                        <span class="tech-pill">Numpy</span>
-                        <span class="tech-pill">Cartographie</span>
-                    </div>
-                    <a href="Projet Visu - Python.html" class="btn">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h2>Séries Temporelles</h2>
-                </div>
-                <div class="project-body">
-                    <p>Analyser des données météorologiques journalières à Londres, à l'aide de méthodes de séries temporelles.</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">R</span>
-                        <span class="tech-pill">forecast</span>
-                        <span class="tech-pill">tseries</span>
-                        <span class="tech-pill">caret</span>
-                        <span class="tech-pill">Séries temporelles</span>
-                        <span class="tech-pill">ARIMA</span>
-                    </div>
-                    <a href="Projet Séries temporelles.pdf" class="btn">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h2>Modèles logistiques et analyse discriminante</h2>
-                </div>
-                <div class="project-body">
-                    <p>Trouver et interpréter les facteurs qui influencent la météo à Melbourne, à l'aide de modèles logstiques.</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">R</span>
-                        <span class="tech-pill">glmnet</span>
-                        <span class="tech-pill">generalhoslem</span>
-                        <span class="tech-pill">car</span>
-                        <span class="tech-pill">questionr</span>
-                        <span class="tech-pill">validation croisée</span>
-                    </div>
-                    <a href="Projet Modèles logistiques.pdf" class="btn">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h2>Apprentissage non-supervisé</h2>
-                </div>
-                <div class="project-body">
-                    <p>Analyser les performances des joueurs de PUBG en utilisant des données statistiques pour élaborer des profils de joueurs et des comportements typiques, basés sur des indicateurs clés.</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">R</span>
-                        <span class="tech-pill">factoextra</span>
-                        <span class="tech-pill">NbClust</span>
-                        <span class="tech-pill">cluster</span>
-                        <span class="tech-pill">mclust</span>
-                        <span class="tech-pill">CAH</span>
-                        <span class="tech-pill">K-means</span>
-                        <span class="tech-pill">Modèles de mélange</span>
-                    </div>
-                    <a href="Projet Classification.pdf" class="btn">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h2>Econométrie</h2>
-                </div>
-                <div class="project-body">
-                    <p>Analyser et identifier les principaux facteurs qui influencent l'espérance de vie, à l'aide de modèles économétriques.</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">R</span>
-                        <span class="tech-pill">lm</span>
-                        <span class="tech-pill">corrplot</span>
-                        <span class="tech-pill">stargazer</span>
-                        <span class="tech-pill">car</span>
-                        <span class="tech-pill">MASS</span>
-                        <span class="tech-pill">olsrr</span>
-                        <span class="tech-pill">lmtest</span>
-                    </div>
-                    <a href="Projet Économétrie.html" class="btn">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h2>Travail d'Etude et de Recherche</h2>
-                </div>
-                <div class="project-body">
-                    <p>Création d'un algortihme permettant de reconnaître un visage parmi une bibliothèque de visages à l'aide de l'ACP</p>
-                    <div class="tech-pills">
-                        <span class="tech-pill">R</span>
-                        <span class="tech-pill">Reconnaissance faciale</span>
-                        <span class="tech-pill">ACP</span>
-                        <span class="tech-pill">stats</span>
-                        <span class="tech-pill">FactoMineR</span>
-                    </div>
-                    <a href="Projet TER.pdf" class="btn">Voir le projet</a>
-                </div>
-            </div>
+            <!-- Autres projets ici -->
 
         </div>
     </div>
