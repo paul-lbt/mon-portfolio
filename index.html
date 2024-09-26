@@ -1,10 +1,9 @@
-<!-- index.html (Page des projets académiques) -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets Académiques - Paul LE BRETON</title>
+    <title>Mon Portfolio - Jean Dupont</title>
     <style>
         :root {
             --primary-color: #1a1a1a;
@@ -26,8 +25,9 @@
             text-align: center;
             padding: 2rem 0;
         }
-        h1, h2 {
+        h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
         .subtitle {
             font-style: italic;
@@ -81,6 +81,13 @@
         .btn:hover {
             background-color: #c62c3b;
         }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
         .tech-pills {
             display: flex;
             flex-wrap: wrap;
@@ -101,29 +108,6 @@
             color: white;
             transform: scale(1.05);
         }
-        nav {
-            background-color: var(--primary-color);
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: var(--bg-color);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0.5rem;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: var(--secondary-color);
-        }
-        footer {
-            background-color: var(--primary-color);
-            color: var(--bg-color);
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
     </style>
 </head>
 <body>
@@ -131,11 +115,6 @@
         <h1>Paul LE BRETON</h1>
         <p class="subtitle">Étudiant en Master2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
     </header>
-
-    <nav>
-        <a href="index.html">Projets académiques</a>
-        <a href="cv.html">CV</a>
-    </nav>
 
     <div class="container">
         <h2>Mes Projets académiques</h2>
@@ -266,64 +245,7 @@
                     <a href="Projet TER.pdf" class="btn">Voir le projet</a>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2024 Paul LE BRETON. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
-
-<!-- cv.html (Page du CV) -->
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Paul LE BRETON</title>
-    <style>
-        /* Styles existants... */
-        .cv-content {
-            padding: 2rem;
-            text-align: center;
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: var(--bg-color);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            transition: background-color 0.3s ease;
-        }
-        .download-btn:hover {
-            background-color: #c62c3b;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Paul LE BRETON</h1>
-        <p class="subtitle">Étudiant en Master2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Projets académiques</a>
-        <a href="cv.html">CV</a>
-    </nav>
-
-    <div class="container">
-        <div class="cv-container">
-            <div class="cv-header">
-                <h2>Curriculum Vitae</h2>
-            </div>
-            <div class="cv-content">
-                <p>Mon CV est disponible au format PDF. Cliquez sur le bouton ci-dessous pour le télécharger.</p>
-                <a href="CV_Paul_LE_BRETON.pdf" class="download-btn" download>Télécharger mon CV</a>
-            </div>
         </div>
     </div>
 
