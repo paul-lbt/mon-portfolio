@@ -69,10 +69,6 @@
         .project-body p {
             margin: 0 0 1rem;
         }
-        .project-body h3 {
-            margin: 1rem 0 0.5rem;
-            font-size: 1.2rem;
-        }
         .btn {
             display: inline-block;
             background-color: var(--secondary-color);
@@ -92,12 +88,32 @@
             padding: 1rem 0;
             margin-top: 2rem;
         }
+        .tech-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tech-pill {
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .tech-pill:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Jean Dupont</h1>
-        <p class="subtitle">Développeur Web Créatif</p>
+        <p class="subtitle">Étudiant M2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
     </header>
 
     <div class="container">
@@ -109,10 +125,13 @@
                 </div>
                 <div class="project-body">
                     <p>Création d'une plateforme de vente en ligne complète avec panier, paiement sécurisé et gestion des stocks.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Aucune</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">MySQL</span>
+                    </div>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
             </div>
@@ -123,10 +142,11 @@
                 </div>
                 <div class="project-body">
                     <p>Développement d'une app de suivi fitness pour iOS et Android avec React Native.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>JavaScript, React Native, Firebase</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Aucune</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">React Native</span>
+                        <span class="tech-pill">Firebase</span>
+                    </div>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
             </div>
@@ -137,10 +157,14 @@
                 </div>
                 <div class="project-body">
                     <p>Analyser des données de séries temporelles pour identifier les tendances et fluctuations des températures moyennes à Londres, en appliquant des méthodes statistiques telles que la décomposition des séries temporelles et la modélisation ARIMA.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>R, RStudio, ggplot2, dplyr</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Décomposition de séries temporelles, Modélisation ARIMA</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">R</span>
+                        <span class="tech-pill">RStudio</span>
+                        <span class="tech-pill">ggplot2</span>
+                        <span class="tech-pill">dplyr</span>
+                        <span class="tech-pill">Séries temporelles</span>
+                        <span class="tech-pill">ARIMA</span>
+                    </div>
                     <a href="Projet Météo.pdf" class="btn">Voir le projet</a>
                 </div>
             </div>
@@ -151,10 +175,12 @@
                 </div>
                 <div class="project-body">
                     <p>Conception et développement d'un blog responsive avec système de gestion de contenu personnalisé.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>HTML, CSS, JavaScript, PHP</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Aucune</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">PHP</span>
+                    </div>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
             </div>
@@ -165,10 +191,12 @@
                 </div>
                 <div class="project-body">
                     <p>Développement d'une API sécurisée pour une application de gestion de tâches avec Node.js et Express.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>JavaScript, Node.js, Express, MongoDB</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Aucune</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express</span>
+                        <span class="tech-pill">MongoDB</span>
+                    </div>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
             </div>
@@ -179,14 +207,19 @@
                 </div>
                 <div class="project-body">
                     <p>Création d'un site vitrine élégant pour mettre en valeur le travail d'un photographe professionnel.</p>
-                    <h3>Technologies Utilisées :</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                    <h3>Techniques Statistiques :</h3>
-                    <p>Aucune</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                        <span class="tech-pill">JavaScript</span>
+                    </div>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Jean Dupont. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
