@@ -1,9 +1,10 @@
+<!-- index.html (Page des projets académiques) -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Jean Dupont</title>
+    <title>Projets Académiques - Paul LE BRETON</title>
     <style>
         :root {
             --primary-color: #1a1a1a;
@@ -25,9 +26,8 @@
             text-align: center;
             padding: 2rem 0;
         }
-        h1 {
+        h1, h2 {
             margin: 0;
-            font-size: 2.5rem;
         }
         .subtitle {
             font-style: italic;
@@ -81,13 +81,6 @@
         .btn:hover {
             background-color: #c62c3b;
         }
-        footer {
-            background-color: var(--primary-color);
-            color: var(--bg-color);
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
         .tech-pills {
             display: flex;
             flex-wrap: wrap;
@@ -108,6 +101,29 @@
             color: white;
             transform: scale(1.05);
         }
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: var(--bg-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: var(--secondary-color);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -115,6 +131,11 @@
         <h1>Paul LE BRETON</h1>
         <p class="subtitle">Étudiant en Master2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
     </header>
+
+    <nav>
+        <a href="index.html">Projets académiques</a>
+        <a href="cv.html">CV</a>
+    </nav>
 
     <div class="container">
         <h2>Mes Projets académiques</h2>
@@ -245,7 +266,6 @@
                     <a href="Projet TER.pdf" class="btn">Voir le projet</a>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -254,3 +274,107 @@
     </footer>
 </body>
 </html>
+
+<!-- cv.html (Page du CV) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Paul LE BRETON</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #e63946;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --card-bg: #f8f8f8;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .cv-container {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .cv-header {
+            background-color: var(--secondary-color);
+            color: var(--bg-color);
+            padding: 1rem;
+            text-align: center;
+        }
+        .cv-content {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: var(--bg-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: var(--secondary-color);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paul LE BRETON</h1>
+        <p class="subtitle">Étudiant en Master2 Mathématiques appliquées, Statistique, parcours Science des données, Intelligence artificielle</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Projets académiques</a>
+        <a href="CV_Paul_LE_BRETON.pdf">CV</a>
+    </nav>
+
+    <div class="container">
+        <div class="cv
